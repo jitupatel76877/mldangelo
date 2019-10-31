@@ -27,7 +27,7 @@ app.use(basePath, express.static(path.join(__dirname, '../public')));
 routes(app); // initialize routes
 
 if (!module.parent) {
-  app.listen(port, 'https://mldangelo.herokuapp.com', (err) => {
+  app.listen(port, '0.0.0.0', (err) => {
     if (err) {
       console.error('application-err', err);
     }
